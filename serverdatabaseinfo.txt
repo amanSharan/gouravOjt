@@ -1,0 +1,30 @@
+Live hosting in 000webhost:-
+-----------------------------------------
+# HTID:17551434: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17551434:
+php_flag output_buffering on
+
+
+sonisatyam6525@gmail.com
+
+database export from local system:-
+---------------------------------------------------
+open phpmyadmin form local system
+go inside the data base u want to import
+click on export button
+click on Go button
+
+import database from local system to live server(000web host)
+-----------------------------------------------------------------------------------------------
+After successful login in 000webhost
+go database manager->new database
+database name:web2021mcrdcr
+database username:web2021md
+database password:@1_)^g=ep(B$XaGt
+Go inside phpmyadmin 
+go inside your data base i.e web2021mcrdcr
+click on import button chooise the exported file and finally click on go  button
+
+
+

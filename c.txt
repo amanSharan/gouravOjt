@@ -1,0 +1,204 @@
+//wap in c to display both right and left diagonal elements of a matrix?
+main()
+{
+int r,c,i,j,x;
+printf("Enter rows and cols");
+scanf("%d%d",&r,&c);
+int a[r][c];
+printf("\nEnter  %d  elements ",r*c);
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nMatrix Elements :\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+}
+printf("\nLeft diagonals are:\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+if(i==j)
+printf("%d\t",a[i][j]);
+else
+printf("\t");
+}
+printf("\n");
+}
+printf("\nRight diagonals are:\n");
+x=r-1;
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+if(j==x)
+printf("%d\t",a[i][j]);
+else
+printf("\t");
+}
+x--;
+printf("\n");
+}
+printf("\nBoth Right and left diagonals are:\n");
+x=r-1;
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+if(j==x||i==j)
+printf("%d\t",a[i][j]);
+else
+printf("\t");
+}
+x--;
+printf("\n");
+}
+}
+//wap in c to transpose a matrix?
+main()
+{
+int r,c,i,j;
+printf("Enter rows and cols");
+scanf("%d%d",&r,&c);
+int a[r][c];
+printf("\nEnter  %d  elements ",r*c);
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nMatrix Elements :\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+}
+printf("\nTranspose matrix\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("%d\t",a[j][i]);
+}
+printf("\n");
+}
+}
+//wap in c to check a matrix is unit or not
+main()
+{
+int r,c,i,j,c1=0,c2=0;
+printf("Enter rows and cols");
+scanf("%d%d",&r,&c);
+int a[r][c];
+printf("\nEnter  %d  elements ",r*c);
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nMatrix Elements :\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("%d\t",a[i][j]);
+}
+printf("\n");
+}
+
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+if(i==j)
+{
+    if(a[i][j]==1)
+        c1++;
+}
+else
+{
+    if(a[i][j]==0)
+        c2++;
+}
+
+}
+
+}
+if(c1==r && c2==((r*c)-r))
+    printf("\nUnit matix");
+else
+    printf("Not a unit matrix");
+}
+
+
+//wap in c to display row and column wise sum of a matrix?
+main()
+{
+int r,c,i,j,rs=0,cs=0,x[10],k=0;
+printf("Enter rows and cols");
+scanf("%d%d",&r,&c);
+int a[r][c];
+printf("\nEnter  %d  elements ",r*c);
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+scanf("%d",&a[i][j]);
+}
+}
+printf("\nMatrix Elements :\n");
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+    rs=rs+a[i][j];
+    cs=cs+a[j][i];
+printf("%d\t",a[i][j]);
+}
+printf("=%d",rs);
+rs=0;
+x[k]=cs;
+k++;
+cs=0;
+printf("\n");
+}
+printf("\n------------------------\n");
+for(i=0;i<k;i++)
+    printf("%d\t",x[i]);
+
+}
+
+//wap in c to add two matrix?
+main()
+{
+int a[2][2]={{1,2},{3,4}};
+int b[2][2]={{1,2},{3,4}};
+int i,j;
+for(i=0;i<2;i++)
+{
+    for(j=0;j<2;j++)
+    {
+        printf("%d\t",a[i][j]+b[i][j]);
+    }
+    printf("\n");
+
+    }
+
+}
+
